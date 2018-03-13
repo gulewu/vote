@@ -1,6 +1,7 @@
 package com.vote.bean;
 
 public class AdminBean {
+	
 	private String username;
 	private String password;
 

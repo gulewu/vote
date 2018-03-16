@@ -239,7 +239,7 @@
 														%>
 														<td colspan=4>
 														    <%=textValue %>
-														    <br/>
+
 															<textarea name="<%=txtname%>" rows="3" style="width:100%"></textarea>
 														</td>
 														<%

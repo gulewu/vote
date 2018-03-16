@@ -99,7 +99,7 @@
 </script>
 	</head>
 	<body>
-		<table width="360" border="0" align="center" cellpadding="0" cellspacing="0">
+		<table width="360" border="0" align="center" cellpadding="0" cellspacing="0" style="font-family:Microsoft Yahei;">
 			<tr>
 				<td valign="top">
 					<table width="106%" border="0" cellspacing="0" cellpadding="0">
@@ -107,7 +107,7 @@
 							<td width="35" rowspan="2" valign="top"></td>
 							<td>
 								<br />
-								<table class="table1" >
+								<table class="table1">
 									<tr>
 										<td height="20"></td>
 									</tr>
@@ -154,8 +154,8 @@
 																	List selList = ss.listSelecterBySeq(seq, oid);
 																	if (qtype == 0) {
 														%>
-														<td>
-															<table>
+														<td  style="border-right-style:none;">
+															<table style="font-size:10px;font-family:Microsoft Yahei;">
 																	<%
 																				for (int j = 0; j < selList.size(); j++) {
 																				Selecter sel = (Selecter) selList.get(j);
@@ -163,7 +163,7 @@
 																	%>
 																	<tr>
 																	<td width="25%" valign="top">
-																		<input type="radio" id="<%=radioName%>" name="<%=radioName%>" value="<%=sel.getSelseq()%>" />
+																		<input type="radio" id="<%=radioName%>" name="<%=radioName%>" value="<%=sel.getSelseq()%>"/>
 																		<%=sel.getContent()%>
 																	</td>
 																	<%
@@ -213,7 +213,7 @@
 																} else if (qtype == 2) {
 																String selectname = "select_" + ques.getSeq();
 														%>
-														<td colspan=4>
+														<td colspan=4 > 
 															<select name="<%=selectname%>">
 																<option value="-1">
 																	请选择
@@ -265,11 +265,11 @@
 									<tr>
 										<td class="m_right">
 											<br />
-											<input type="button" name="btnOK" value="   提  交   " 
+											<input type="button" style="background:#436EEE;color:white;width:320px;height:30px;" name="btnOK" value="   提  交   " 
 											onclick="btnOK_onclick(myForm);" />
 											&nbsp;
-											<input type="button" name="btnRedo" value="   重  填   " 
-											onclick="btnRest_onclick();" />
+											<!-- <input type="button" name="btnRedo" style="background:#436EEE;color:white" value="   重  填   " 
+											onclick="btnRest_onclick();" /> -->
 											<!-- &nbsp;
 											<input type="button" name="btnRedo" value="   返 回   "
 												onclick="btnBack_onclick();" /> -->

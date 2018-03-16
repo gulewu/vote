@@ -99,15 +99,15 @@
 </script>
 	</head>
 	<body>
-		<table width="360" border="0" align="center" cellpadding="0" cellspacing="0" style="font-family:Microsoft Yahei;">
+		<table width="360" border="0" align="center" cellpadding="0" cellspacing="0" style="font-size:10px;font-family:Microsoft Yahei;">
 			<tr>
 				<td valign="top">
-					<table width="106%" border="0" cellspacing="0" cellpadding="0">
+					<table width="106%" border="0" cellspacing="0" cellpadding="0" style="font-size:10px;font-family:Microsoft Yahei;">
 						<tr>
 							<td width="35" rowspan="2" valign="top"></td>
 							<td>
 								<br />
-								<table class="table1">
+								<table class="table1" style="font-size:10px;font-family:Microsoft Yahei;">
 									<tr>
 										<td height="20"></td>
 									</tr>
@@ -133,7 +133,7 @@
 									<tr>
 										<td colspan="50">
 											<form method="post" action="" name="myForm">
-												<table class="table2" border="1"> 
+												<table class="table2" border="1" style="font-size:10px;font-family:Microsoft Yahei;"> 
 													<%
 														int subCnt = 0;
 														if (quesList != null && quesList.size() > 0) {
@@ -183,7 +183,7 @@
 														%>
 													<tr>
 														<td>
-															<table>
+															<table style="font-size:10px;font-family:Microsoft Yahei;">
 																	<%
 																				for (int j = 0; j < selList.size(); j++) {
 																				Selecter sel = (Selecter) selList.get(j);
